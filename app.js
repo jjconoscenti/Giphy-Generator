@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 // global variables
 
-var gifs = ["30 Rock", "Game of Thrones", "House of Cards", "Batman", "Spiderman", "Kimmy Schmidt", "Arrested Development"];
+var gifs = ["30 Rock", "Game of Thrones", "House of Cards", "Batman", "Spiderman", "Kimmy Schmidt", "Arrested Development", "Kanye West"];
 
 // adds buttons
 gifButtons = function() {
@@ -17,7 +17,7 @@ gifButtons = function() {
 // display gifs via API
 displayGifs = function () {
 
-  $("#gifDisplay").html('Loading...');
+  $("#gifDisplay").html('One moment!');
 	var gifName = $(this).attr("giphy");
 	var queryURL = "https://api.giphy.com/v1/gifs/search?q="+gifName+"&api_key=dc6zaTOxFJmzC&rating=r&sort=relevant&limit=15";
 	$.ajax({
@@ -34,7 +34,7 @@ displayGifs = function () {
 	});
 }
 
-// this click function will put the user input into the gif array
+// click function puts search term into the gif array
 $("#submitGif").on("click", function(event) {
 
         event.preventDefault();
@@ -47,7 +47,7 @@ $("#submitGif").on("click", function(event) {
 
 function GifButton (btn) {
 	  var gifBtn = $("<button>");
-	  gifBtn.addClass("btn btn-success gifButton");
+	  gifBtn.addClass("btn btn-default gifButton");
 	  gifBtn.attr("giphy", btn);
 	  gifBtn.text(btn);
 	  gifBtn.on('click', displayGifs);
@@ -57,11 +57,11 @@ function GifButton (btn) {
 function GifDisplay (gif) {
   var playGif = gif.images.fixed_height.url;
   var pauseGif = gif.images.fixed_height_still.url;
-  var gifRating = gif.rating;
   var playstate = false;
+  var gifRating = gif.rating;
 
   var gifElement = $("<div class='gif'></div>")
-  var rating = $("<p>rating: " + gifRating+"</p>");
+  var rating = $("<p>rating: " + gifRating+ "</p>");
   var gifImage = $("<img></img>");
   gifElement.append(rating);
   gifElement.append(gifImage);

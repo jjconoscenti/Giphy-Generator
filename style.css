@@ -1,5 +1,5 @@
 body {
-	background: #E5E4E2;
+	background: #58a7d4;
 	font-family: 'Arimo', sans-serif;
 }
 
@@ -18,16 +18,51 @@ button {
 	border-color: #a32408;
 }
 
-.btn-success {
+.btn-default {
+	color: white;
 	background-color: #1f51a3;
 	border-color: #a32408;
 	padding: 5px 5px 5px 5px;
 	margin-right: 3px;
+	margin-top: 3px;
+	margin-bottom: 3px;
 }
 
-.btn-success:hover {
+.btn-default:active {
+	color: white;
+	background-color: #1f51a3;
+	border-color: #a32408;
+	padding: 5px 5px 5px 5px;
+	margin-right: 3px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.btn-default:visited {
+	color: white;
+	background-color: #1f51a3;
+	border-color: #a32408;
+	padding: 5px 5px 5px 5px;
+	margin-right: 3px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.btn-default:focus {
+	color: white;
+	background-color: #1f51a3;
+	border-color: #a32408;
+	padding: 5px 5px 5px 5px;
+	margin-right: 3px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.btn-default:hover {
+	color: white;
 	background-color: pink;
-	border-color: purple;
+	border-color: orange;
+	border-style: solid 3px purple;
 	font-family: 'Exo', sans-serif;
 }
 
