@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JJ's GIF Generator</title>
+  <!-- reset -->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <!-- style -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- favicon -->
+  <link rel="icon" href="assets/images/giphy_logo_square_social.png">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+</head>
+<body>
+
+  <!-- header -->
+  <div class="page-header">
+    <h1>JJ's Gif Library</h1>
+  </div>
+
+  <!-- hold the gif buttons -->
+  <div class="container">
+    <div class="row" id="row1">
+      <div class="col-md-10" id="gifButtonLibrary">
+      </div>
+    </div>
+
+    <!-- display the gifs and new buttons -->
+    <div class="row" id="row2">
+      <div class="col-md-3 col-sm-12" id="gifInput">
+        <form>
+          <div class="form-group" id="inputForm">
+            <label for="newGifButtons">Add to the library</label>
+            <input type="text" class="form-control" id="newGifButtons" placeholder="Type a gif search!">
+          </div>
+          <button type="submit" class="btn btn-default" id="submitGif">Submit</button>
+        </form>
+      </div>
+      <div class="col-md-9 col-sm-12" id="gifDisplay">
+      <!-- <hr> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="row text-center" id="footer">
+    <div class="col-md-10">
+    <br>
+      <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span>
+      Copyright 2017 JJ Conoscenti, powered by Giphy
+    </div>
+  </div>
+  <br>
+  <!-- javascript -->
+  <script src="assets/js/app.js"></script>
+
+</body>
+</html>
