@@ -66,11 +66,19 @@ button {
 	font-family: 'Exo', sans-serif;
 }
 
+.page-header {
+	color: white;
+}
+
 a {
 	color: white;
 }
 
 .glyphicon-copyright-mark {
+	color: white;
+}
+
+.form-group {
 	color: white;
 }
 
