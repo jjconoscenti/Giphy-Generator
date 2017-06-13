@@ -66,6 +66,10 @@ button {
 	font-family: 'Exo', sans-serif;
 }
 
+a {
+	color: white;
+}
+
 @media (min-width: 992px) {
   #gifInput, #gifDisplay {
     float: right;
