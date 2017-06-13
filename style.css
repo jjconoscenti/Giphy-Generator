@@ -70,6 +70,10 @@ a {
 	color: white;
 }
 
+.glyphicon-copyright-mark {
+	color: white;
+}
+
 @media (min-width: 992px) {
   #gifInput, #gifDisplay {
     float: right;
