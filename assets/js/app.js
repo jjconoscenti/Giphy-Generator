@@ -11,6 +11,7 @@ gifButtons = function() {
 	for (i=0; i<gifs.length; i++) {
     var gifBtn = GifButton(gifs[i]);
     $("#gifButtonLibrary").append(gifBtn);
+    alert("merge conflict");
   }
 }
 
