@@ -69,7 +69,7 @@ function GifDisplay (gif) {
   gifImage.addClass("gifImage");
   gifImage.attr("src", pauseGif);
 
-  	// click to toggle play / pause 
+  	// click to toggle play / pause
 	  gifImage.on('click', function () {
 	    if (!playstate) {
 	      gifImage.attr("src", playGif);
