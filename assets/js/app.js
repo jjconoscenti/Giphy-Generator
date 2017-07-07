@@ -11,6 +11,7 @@ gifButtons = function() {
 	for (i=0; i<gifs.length; i++) {
     var gifBtn = GifButton(gifs[i]);
     $("#gifButtonLibrary").append(gifBtn);
+    console.log('Merge me in');
   }
 }
 
@@ -68,7 +69,7 @@ function GifDisplay (gif) {
   gifImage.addClass("gifImage");
   gifImage.attr("src", pauseGif);
 
-  	// click to toggle play / pause 
+  	// click to toggle play / pause
 	  gifImage.on('click', function () {
 	    if (!playstate) {
 	      gifImage.attr("src", playGif);
